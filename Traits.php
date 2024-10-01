@@ -1,8 +1,14 @@
 <?php
 /*
-    A trait helps to share code between different classes.
-    This example shows how both Post and Video classes can use the share method 
-    from the Sharable trait without repeating the code in both classes.
+    What I understand about traits is that they help us avoid writing the same code twice. 
+    Instead of copying and pasting, we can create a trait and then use it in different classes.
+
+    In this example, I made a Sharable trait that has a share method. 
+    Both the Post and Video classes need to share things on social media, 
+    so they use the Sharable trait instead of each having their own share method.
+
+    This way, Post and Video can both share things without me writing the same code twice. 
+    It’s like writing one set of instructions and using it wherever I need to.
 */
 
 trait Sharable {
