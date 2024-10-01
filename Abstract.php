@@ -1,11 +1,17 @@
 <?php
 /*
-    Abstract class is a base class that can't create objects directly.
-    It has methods that child classes must create (abstract methods).
-    This example shows how a Dog and a Cat can have their own "sound" method 
-    using the same abstract Animal class.
-*/
+    So, I learned that an abstract class is like a plan or a drawing. 
+    It's something that we can’t use by itself. We need other classes, like Dog or Cat, 
+    to complete the plan and tell us what’s happening.
 
+    Imagine we have a plan that says "an animal makes a sound," but it doesn’t tell us 
+    what sound it makes. It's like if someone gave us a picture of an animal, 
+    but we didn’t know if it was a dog or a cat yet.
+
+    Then, when we know it’s a dog, we can say "the dog barks," or if it’s a cat, we say "the cat meows."
+    Both of them follow the same plan, but they make different sounds. That’s how I understand 
+    an abstract class – it sets the rules, but the details come from other classes like Dog and Cat.
+*/
 abstract class Animal {
     abstract public function sound();
     public function sleep() {
